@@ -44,8 +44,8 @@ quoteText.textContent =quote.text;
 
 //  tweet
 function tweetQuote(){{
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author} `;
-    window.open((twitterUrl, '_blank'));
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${author.textContent} `;
+    window.open(twitterUrl, '_blank');
 }}
 // event listeners 
 newQuoteBtn.addEventListener('click', newQuote);
